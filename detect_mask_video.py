@@ -17,11 +17,6 @@ import cv2
 import os
 import pymongo
 
-# Connect to MongoDB
-cluster = MongoClient("mongodb+srv://Oecophylla:rangga2203@cluster0.yjcmj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-db = cluster["mask_detection"]
-collection = db["default"]
-
 max_inflight_messages = 20
 
 def detect_and_predict_mask(frame, faceNet, maskNet):
